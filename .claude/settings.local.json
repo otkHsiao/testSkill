@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node create_pptx.js:*)",
+      "Bash(npm install:*)",
+      "Bash(node generate_pptx.js:*)",
+      "Bash(python:*)",
+      "Skill(xlsx)",
+      "Skill(xlsx:*)",
+      "Skill(document-skills:docx)",
+      "Skill(document-skills:docx:*)"
+    ]
+  },
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true
+  }
+}

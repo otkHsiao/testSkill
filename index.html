@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的作品集 | 前端开发者</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">DevPortfolio</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">首页</a>
+                <a href="#about" class="nav-link">关于我</a>
+                <a href="#skills" class="nav-link">技能</a>
+                <a href="#projects" class="nav-link">作品</a>
+                <a href="#contact" class="nav-link">联系</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero区域 -->
+    <section class="hero" id="home">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="greeting">你好，我是</span>
+                <span class="name">张三</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typewriter" id="typewriter"></span>
+                <span class="cursor">|</span>
+            </p>
+            <p class="hero-description">
+                热爱创造优雅、高效的Web应用程序
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">查看作品</a>
+                <a href="#contact" class="btn btn-secondary">联系我</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>向下滚动</span>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <span>👨‍💻</span>
+                        </div>
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>全栈开发者 & UI设计爱好者</h3>
+                    <p>
+                        我是一名拥有5年经验的前端开发者，专注于构建响应式、用户友好的Web应用程序。
+                        我热衷于学习新技术，并将其应用于实际项目中。
+                    </p>
+                    <p>
+                        在空闲时间，我喜欢阅读技术博客、参与开源项目，以及探索最新的前端框架和工具。
+                        我相信代码不仅仅是工具，更是一种艺术形式。
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="50">0</span>
+                            <span class="stat-label">完成项目</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="30">0</span>
+                            <span class="stat-label">满意客户</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">年经验</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">开始合作</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能 -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">专业技能</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon">🎨</div>
+                    <h3>前端开发</h3>
+                    <p>HTML5, CSS3, JavaScript, TypeScript</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="95"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>框架</h3>
+                    <p>React, Vue.js, Angular, Next.js</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon">🖥️</div>
+                    <h3>后端开发</h3>
+                    <p>Node.js, Python, Java, Go</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>数据库</h3>
+                    <p>MySQL, MongoDB, PostgreSQL, Redis</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon">☁️</div>
+                    <h3>云服务</h3>
+                    <p>AWS, Azure, Google Cloud, Docker</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-icon">🎯</div>
+                    <h3>UI/UX设计</h3>
+                    <p>Figma, Sketch, Adobe XD, Photoshop</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品展示 -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">我的作品</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="web">网站</button>
+                <button class="filter-btn" data-filter="app">应用</button>
+                <button class="filter-btn" data-filter="design">设计</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span>🌐</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="查看详情">🔍</a>
+                                <a href="#" class="project-link" title="访问网站">🔗</a>
+                                <a href="#" class="project-link" title="源代码">💻</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>电商平台</h3>
+                        <p>现代化的电商网站，支持多种支付方式</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span>📱</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="查看详情">🔍</a>
+                                <a href="#" class="project-link" title="访问网站">🔗</a>
+                                <a href="#" class="project-link" title="源代码">💻</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>健身追踪App</h3>
+                        <p>帮助用户追踪运动数据和健康状况</p>
+                        <div class="project-tags">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span>🎨</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="查看详情">🔍</a>
+                                <a href="#" class="project-link" title="访问网站">🔗</a>
+                                <a href="#" class="project-link" title="源代码">💻</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>品牌设计系统</h3>
+                        <p>完整的企业品牌视觉设计系统</p>
+                        <div class="project-tags">
+                            <span>Figma</span>
+                            <span>Illustrator</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <span>📊</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="查看详情">🔍</a>
+                                <a href="#" class="project-link" title="访问网站">🔗</a>
+                                <a href="#" class="project-link" title="源代码">💻</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>数据可视化平台</h3>
+                        <p>实时数据分析和可视化仪表板</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>D3.js</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <span>💬</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="查看详情">🔍</a>
+                                <a href="#" class="project-link" title="访问网站">🔗</a>
+                                <a href="#" class="project-link" title="源代码">💻</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>社交聊天应用</h3>
+                        <p>实时聊天和社交功能的移动应用</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Socket.io</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                            <span>✨</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="查看详情">🔍</a>
+                                <a href="#" class="project-link" title="访问网站">🔗</a>
+                                <a href="#" class="project-link" title="源代码">💻</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>动效设计集</h3>
+                        <p>创意交互动画和微交互设计</p>
+                        <div class="project-tags">
+                            <span>After Effects</span>
+                            <span>Lottie</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系 -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>让我们一起合作</h3>
+                    <p>无论您有项目想法还是只是想打个招呼，我很乐意收到您的来信！</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <strong>邮箱</strong>
+                                <p>hello@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>位置</strong>
+                                <p>中国，上海</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <strong>电话</strong>
+                                <p>+86 123 4567 8900</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="GitHub">
+                            <span>🐙</span>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <span>💼</span>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <span>🐦</span>
+                        </a>
+                        <a href="#" class="social-link" title="微信">
+                            <span>💬</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" required placeholder="您的姓名">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" id="email" name="email" required placeholder="您的邮箱">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">主题</label>
+                        <input type="text" id="subject" name="subject" required placeholder="消息主题">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">消息</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="您想说什么..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>发送消息</span>
+                        <span class="btn-icon">📤</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">DevPortfolio</span>
+                    <p>用代码构建美好未来</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">首页</a>
+                    <a href="#about">关于</a>
+                    <a href="#skills">技能</a>
+                    <a href="#projects">作品</a>
+                    <a href="#contact">联系</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DevPortfolio. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button class="back-to-top" id="back-to-top" title="返回顶部">
+        <span>↑</span>
+    </button>
+
+    <!-- 加载动画 -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p>加载中...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

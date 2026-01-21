@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: white; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column; padding: 40pt;
+}
+h2 { font-size: 44pt; color: #6366f1; margin: 0 0 30pt 0; font-weight: 700; }
+.skills-grid { display: flex; flex-wrap: wrap; gap: 30pt; }
+.skill { flex: 0 0 calc(50% - 15pt); }
+.skill-name { font-size: 16pt; font-weight: 700; color: #1f2937; margin: 0 0 5pt 0; }
+.skill-list { font-size: 14pt; color: #6b7280; margin: 0; }
+</style>
+</head>
+<body>
+<h2>专业技能</h2>
+<div class="skills-grid">
+<div class="skill">
+<p class="skill-name">前端开发</p>
+<p class="skill-list">HTML5, CSS3, JavaScript, TypeScript</p>
+</div>
+<div class="skill">
+<p class="skill-name">框架</p>
+<p class="skill-list">React, Vue.js, Angular, Next.js</p>
+</div>
+<div class="skill">
+<p class="skill-name">后端开发</p>
+<p class="skill-list">Node.js, Python, Java, Go</p>
+</div>
+<div class="skill">
+<p class="skill-name">数据库</p>
+<p class="skill-list">MySQL, MongoDB, PostgreSQL, Redis</p>
+</div>
+</div>
+</body>
+</html>
