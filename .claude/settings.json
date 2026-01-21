@@ -3,10 +3,12 @@
     "document-skills@anthropic-agent-skills": true,
     "example-skills@anthropic-agent-skills": true
   },
-   "extraKnownMarketplaces": [
-    {
-      "name": "anthropics/skills",
-      "source": "github://anthropics/skills"
+  "extraKnownMarketplaces": {
+    "anthropics-skills": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/skills"
+      }
     }
-  ],
+  }
 }
